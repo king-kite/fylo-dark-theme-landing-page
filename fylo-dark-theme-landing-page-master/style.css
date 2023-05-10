@@ -1,0 +1,631 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Primary */
+  --introAndEmailBackground: hsl(217, 28%, 15%);
+  --mainBackground: hsl(218, 28%, 13%);
+  --footerBackground: hsl(216, 53%, 9%);
+  --testimonialBackground: hsl(219, 30%, 18%);
+
+  /* Accent */
+  --cyan: hsl(176, 68%, 64%); /* (inside call-to-action gradient) */
+  --blue: hsl(198, 60%, 50%); /* (inside call-to-action gradient) */
+  --lightRed: hsl(0, 100%, 63%); /*  (error) */
+
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+
+  /* Font Size */
+  --fontSize: 14px;
+
+  /* Headings, Call-to-actions, Header Navigation */
+  /* --family: [Raleway](https://fonts.google.com/specimen/Raleway) */
+  /* -weights: 400, 700 */
+
+  /* Body */
+
+  /* -family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+  -weights: 400, 700 */
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--mainBackground);
+  color: var(--white);
+}
+
+header {
+  background-color: var(--introAndEmailBackground);
+  width: 100%;
+  padding: 0.8em;
+}
+
+header .logo {
+  width: 120px;
+  height: 35px;
+}
+
+.header-container {
+  margin-top: 1em;
+}
+
+.header-container ul {
+  font-size: 1.1em;
+  list-style-type: none;
+  display: inline-flex;
+  text-transform: capitalize;
+  float: right;
+  margin-top: 0.5em;
+}
+
+.header-container ul li {
+  margin: 0 0.8em;
+  margin-right: 0.2em;
+}
+
+.header-container ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.illustration-intro {
+  width: 100%;
+  text-align: center;
+}
+
+.illustration-intro img {
+  margin: 15% 0;
+  width: 90%;
+}
+
+.intro-section {
+  text-align: center;
+  margin: 3%;
+  /* Add the Background Image */
+}
+
+.intro-section h3 {
+  font-size: 2em;
+  line-height: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.intro-section p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  margin: 0.5em 8%;
+}
+
+.cta {
+  margin: 1.5em auto;
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: 1.1em;
+  padding: 1.3em;
+  width: 70%;
+  font-weight: bolder;
+  border-color: var(--blue);
+  border-radius: 40px;
+  border-style: none;
+}
+
+.cta:hover {
+  cursor: pointer;
+  background-color: var(--white);
+  color: var(--blue);
+}
+
+.details-section {
+  margin: 9em 5%;
+  text-align: center;
+}
+
+.details-section li {
+  list-style-type: none;
+  margin: 6em 0;
+}
+
+.details-section li img {
+  width: 100px;
+  height: 100px;
+  margin: 1.5em 0;
+}
+
+.details-section li h4 {
+  font-size: 1.4em;
+  line-height: 1.5em;
+  margin: 1em, 0.5%;
+}
+
+.details-section li p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  margin: 0.5em 0.4%;
+}
+
+.stay-productive > img {
+  width: 100%;
+  padding: 3em 5%;
+}
+
+.stay-productive > div {
+  margin: 0 0.5em;
+}
+
+.stay-productive h3 {
+  font-size: 1.5em;
+  margin: 1em 1%;
+  text-shadow: var(--introAndEmailBackground);
+  /* Check how to use text-shadow */
+}
+
+.stay-productive p {
+  font-size: 1.1em;
+  margin: 0.5em 1%;
+}
+
+.fylo-arrow {
+  display: inline-block;
+  padding: 4px;
+  margin-left: 4px;
+  border-bottom-color: var(--cyan);
+  border-bottom-style: solid;
+  border-width: thin;
+}
+
+.fylo-arrow a {
+  color: var(--cyan);
+  font-size: 1em;
+  font-weight: lighter;
+  margin-bottom: 1%;
+  text-decoration: none;
+}
+
+.fylo-arrow a:hover {
+  color: var(--white);
+}
+
+.fylo-arrow img {
+  width: 24px;
+  height: 24px;
+  /* Fix the image padding and margin*/
+}
+
+.testimonial-section {
+  margin: 10em 3% 0;
+}
+
+.quotes {
+  width: 25px;
+  height: 20px;
+  margin-left: 2.4em;
+}
+
+.testimonials ul li {
+  background-color: var(--testimonialBackground);
+  list-style-type: none;
+  margin: 7% 7%;
+  padding: 1.8em;
+  border-radius: 8px;
+}
+
+.testimonials ul li:first-child,
+.testimonials ul li:last-child {
+  margin: 0 7%;
+}
+
+.testimonials ul li p {
+  font-size: var(--fontSize);
+  letter-spacing: 1px;
+  line-height: 1.5em;
+}
+
+.profile-image {
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin-top: 1em;
+  margin-right: 0.3em;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.profile-text {
+  display: inline-block;
+  margin-top: 1.2em;
+  margin-left: 0.3em;
+}
+
+.profile-text h5 {
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+
+.profile-text span {
+  font-size: 10px;
+}
+
+.subscription {
+  background-color: var(--introAndEmailBackground);
+  margin: 0 5%;
+  padding: 1.5em;
+  text-align: center;
+  border-radius: 12px;
+  position: relative;
+  top: 220px;
+}
+
+.subscription h3 {
+  font-size: 22px;
+  margin: 16px 0;
+}
+
+.subscription p {
+  font-size: 1.1em;
+  font-weight: lighter;
+  line-height: 1.4em;
+  letter-spacing: 1px;
+}
+
+.subscription-form {
+  margin: 1.5em 0;
+  padding: 1.5em 0.8em;
+  text-align: center;
+}
+
+.subscription-form input,
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 1.5em 2em;
+  width: 100%;
+  border-radius: 50px;
+  border-style: none;
+  color: var(--cyan);
+}
+
+.subscription-form button {
+  background: var(--cyan);
+  text-align: center;
+  margin-top: 2.2em;
+  padding: 1em 2em;
+  color: var(--white);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.subscription-form button:hover {
+  background: var(--white);
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+footer {
+  background: var(--footerBackground);
+  width: 100%;
+  padding: 1.5em;
+}
+
+.footer-container {
+  margin-top: 250px;
+  padding: 1em;
+}
+
+.footer-head-section {
+  padding-top: 10px;
+  font-size: 18px;
+}
+
+.footer-head-section > img {
+  width: 200px;
+  height: 60px;
+  margin-left: 10px;
+  margin-bottom: 2em;
+}
+
+.footer-icon-text {
+  display: flex;
+  padding: 0.5em;
+  margin: 1em auto;
+}
+
+.footer-icon {
+  margin-right: 1em;
+  text-align: center;
+}
+
+.footer-text {
+  margin-left: 1em;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+.footer-list-section {
+  margin: 2.5em auto;
+}
+
+.footer-list-section ul li {
+  list-style-type: none;
+  margin: 1em 0.5em;
+}
+
+.footer-list-section ul li a {
+  text-decoration: none;
+  color: var(--white);
+  padding: 4px 0;
+  font-size: 18px;
+  font-weight: lighter;
+  line-height: 1.4em;
+}
+
+.footer-list-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-icon-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 3em;
+}
+
+.footer-icon-section div {
+  border-radius: 50%;
+  border-style: solid;
+  border-color: var(--white);
+  border-width: thin;
+  margin: 1em;
+  text-align: center;
+}
+
+.footer-icon-section img {
+  padding: 0.7em;
+  width: 100%;
+}
+
+.footer-icon-section div:hover {
+  cursor: pointer;
+  background: var(--introAndEmailBackground);
+}
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    margin: 3em 1.5em 0;
+  }
+
+  .illustration-intro img {
+    margin: 7% 0;
+    width: 60%;
+  }
+
+  .intro-section {
+    margin: 3% 25%;
+  }
+
+  .intro-section h3 {
+    margin-bottom: 0.5em;
+  }
+
+  .intro-section p {
+    margin: 0.5em 4%;
+  }
+
+  .cta {
+    width: 50%;
+  }
+
+  .details-section ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .details-section ul li {
+    margin-top: 0;
+    padding-left: 2em;
+    padding-right: 2em;
+    width: 50%;
+  }
+
+  .details-section li img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .details-section li h4 {
+    font-size: 1.2em;
+    line-height: 1.3em;
+  }
+
+  .details-section li p {
+    font-size: 1em;
+    line-height: 1.3em;
+    margin: 0.5em 0.4%;
+  }
+
+  .stay-productive {
+    display: flex;
+  }
+
+  .stay-productive > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0 1em;
+  }
+
+  .stay-productive img {
+    width: 50%;
+    padding: 0.2em;
+    margin: 0 1em;
+  }
+
+  .stay-productive h3 {
+    font-size: 2.5em;
+    margin: 0.5em 1%;
+  }
+
+  .stay-productive p {
+    font-size: 0.9em;
+    margin: 0.1em 1%;
+  }
+
+  .fylo-arrow {
+    width: 14em;
+  }
+
+  .fylo-arrow a {
+    margin-bottom: 0.5%;
+  }
+
+  .fylo-arrow img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .quotes {
+    width: 50px;
+    height: 40px;
+    margin-left: 1.5em;
+  }
+
+  .testimonial-section {
+    margin: 7em 3% 0;
+  }
+
+  .testimonials ul {
+    display: flex;
+  }
+
+  .testimonials ul li:first-child,
+  .testimonials ul li:last-child {
+    margin: 1em;
+    margin-top: 0;
+  }
+
+  .testimonials ul li {
+    margin: 1em;
+    margin-top: 0;
+    padding: 1.5em;
+    font-size: 1em;
+  }
+
+  .testimonials ul li p {
+    font-size: 0.8em;
+  }
+
+  .subscription {
+    margin: 0 15%;
+    top: 170px;
+  }
+
+  .subscription h3 {
+    font-size: 1.8em;
+    margin: 1em 0;
+  }
+
+  .subscription p {
+    font-size: 0.8em;
+    font-weight: lighter;
+    line-height: 1.4em;
+  }
+
+  .subscription-form {
+    display: flex;
+    margin: 1.5em 0;
+    padding: 1.5em 0.8em;
+    text-align: center;
+  }
+
+  .subscription-form input {
+    width: 70%;
+    height: 4em;
+    margin: 0;
+    padding: 0.5em 2em;
+    border-radius: 50px;
+    border-style: none;
+    color: var(--cyan);
+  }
+
+  .subscription-form button {
+    width: 25%;
+    height: 4em;
+    background: var(--cyan);
+    text-align: center;
+    margin-top: 0;
+    padding: 0.5em 2em;
+    font-size: 0.8em;
+  }
+
+  .footer-container {
+    display: flex;
+    /* justify-content: space-between; */
+    margin-top: 200px;
+  }
+
+  .footer-head-section {
+    width: 40%;
+    padding-top: 10px;
+    font-size: 0.9em;
+  }
+
+  .footer-head-section > img {
+    width: 140px;
+    height: 40px;
+    margin-left: 7px;
+    margin-bottom: 1em;
+  }
+
+  .footer-icon-text {
+    display: flex;
+    padding: 0.5em;
+    margin: 1em auto;
+  }
+
+  .footer-icon {
+    margin-right: 1em;
+    text-align: center;
+  }
+
+  .footer-text {
+    letter-spacing: 1px;
+    font-size: 0.9em;
+  }
+
+  .footer-contact-section {
+    margin: 3.9em auto;
+  }
+
+  .footer-list-section {
+    margin: 4em auto;
+  }
+
+  .footer-list-section ul li a {
+    font-size: 0.8em;
+  }
+
+  .footer-icon-section {
+    align-items: start;
+    margin-top: 3.6em;
+  }
+
+  .footer-icon-section div {
+    border-style: none;
+    margin: 1em 0.5em;
+  }
+
+  .footer-icon-section img {
+    padding: 0.4em;
+    width: 100%;
+  }
+}
